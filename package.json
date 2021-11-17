@@ -1,0 +1,26 @@
+{
+  "name": "fairyjs-utils",
+  "version": "1.0.0",
+  "description": "前端工具总结仓库",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Genejob93/fairyjs-utils.git"
+  },
+  "keywords": [
+    "fairy",
+    "js",
+    "utils",
+    "前端工具库",
+    "util"
+  ],
+  "author": "Gene",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Genejob93/fairyjs-utils/issues"
+  },
+  "homepage": "https://github.com/Genejob93/fairyjs-utils#readme"
+}
