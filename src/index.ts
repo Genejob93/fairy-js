@@ -6,4 +6,6 @@
  * @description: fairy-js 一个自用工具类库
  */
 
+
 export * from "./is-type"
+module.exports = require('is-type')
