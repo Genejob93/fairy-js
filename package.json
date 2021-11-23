@@ -32,7 +32,6 @@
     "url": "https://github.com/Genejob93/fairyjs-utils/issues"
   },
   "homepage": "https://github.com/Genejob93/fairyjs-utils#readme",
-  "private": false,
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
