@@ -11,7 +11,7 @@
 
 /**
  * @param param 传入一个任意参数
- * @return type 布尔值
+ * @return type 布尔值 判断是否 string 类型
  */
 export const isString = (param: any): boolean => {
     return Object.prototype.toString.call(param) === "[object String]" || typeof param === "string"
@@ -19,7 +19,7 @@ export const isString = (param: any): boolean => {
 
 /**
  * @param param 传入一个任意参数
- * @return type 布尔值
+ * @return type 布尔值 判断是否是 number 类型
  */
 export const isNumber = (param: any): boolean => {
     return Object.prototype.toString.call(param) === "[object Number]" || typeof param === "number"
@@ -27,7 +27,7 @@ export const isNumber = (param: any): boolean => {
 
 /**
  * @param param 传入一个任意参数
- * @return type 布尔值
+ * @return type 布尔值 判断是否是 null 类型
  */
 export const isNull = (param: any): boolean => {
     return typeof param === "object" && Object.prototype.toString.call(param) === "[object Null]"
@@ -35,7 +35,7 @@ export const isNull = (param: any): boolean => {
 
 /**
  * @param param 传入一个任意参数
- * @return type 布尔值
+ * @return type 布尔值 判断是否是 Undefined 类型
  */
 export const isUndefined = (param: any): boolean => {
     return typeof param === "undefined" || Object.prototype.toString.call(param) === '[object Undefined]'
@@ -43,7 +43,7 @@ export const isUndefined = (param: any): boolean => {
 
 /**
  * @param param 传入一个任意参数
- * @return type 布尔值
+ * @return type 布尔值 判断是否是一个 Object
  */
 export const isObject = (param: any): boolean => {
     return Object.prototype.toString.call(param) === "[object Object]"
@@ -51,12 +51,16 @@ export const isObject = (param: any): boolean => {
 
 /**
  * @param param 传入一个任意参数
- * @return type 布尔值
+ * @return type 布尔值 判断是否是数组
  */
 export const isArray = (param: any): boolean => {
     return Object.prototype.toString.call(param) === "[object Array]"
 }
 
+/**
+ * @param param 传入一个任意参数
+ * @return type 布尔值 判断是否是一个函数
+ */
 export const isFunction = (param: any): boolean => {
     return Object.prototype.toString.call(param) === "[object Function]"
 }
