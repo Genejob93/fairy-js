@@ -21,3 +21,4 @@ rollup.config.js
 
 # 代码目录
 test/
+node_modules
