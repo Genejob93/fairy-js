@@ -8,4 +8,3 @@
 
 
 export * from "./is-type"
-module.exports = require('is-type')

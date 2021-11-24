@@ -2,9 +2,9 @@
   "name": "fairyjs-utils",
   "version": "1.0.5",
   "description": "前端工具总结仓库",
-  "main": "./src/index.ts",
+  "main": "./dist/index.ts",
   "scripts": {
-    "build": "rollup -c && npm run copy",
+    "build": "rollup -c",
     "copy": "cp package.json README.md dist",
     "test": "test"
   },
@@ -41,6 +41,7 @@
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "^8.3.0",
     "commander": "^8.3.0",
+    "cp": "^0.2.0",
     "lodash": "^4.17.21",
     "postcss": "^8.3.11",
     "rollup": "^2.60.1",
