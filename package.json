@@ -2,13 +2,14 @@
   "name": "fairyjs-utils",
   "version": "1.0.5",
   "description": "前端工具总结仓库",
-  "main": "./dist/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "browser": "dist/index.js",
   "scripts": {
     "build": "rollup -c",
     "copy": "cp package.json README.md dist",
     "test": "test"
   },
-  "browser": "dist/index.ts",
   "type": "module",
   "repository": {
     "type": "git",
