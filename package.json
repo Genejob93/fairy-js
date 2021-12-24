@@ -1,5 +1,5 @@
 {
-  "name": "fairyjs-utils",
+  "name": "fairyJS",
   "version": "1.0.5",
   "description": "前端工具总结仓库",
   "main": "dist/index.js",
@@ -10,7 +10,7 @@
     "copy": "cp package.json README.md dist",
     "test": "test"
   },
-  "type": "module",
+  "types": "cjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Genejob93/fairyjs-utils.git"
@@ -45,7 +45,7 @@
     "cp": "^0.2.0",
     "lodash": "^4.17.21",
     "postcss": "^8.3.11",
-    "rollup": "^2.60.1",
+    "rollup": "^2.62.0",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-livereload": "^2.0.5",

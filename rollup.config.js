@@ -7,11 +7,28 @@ import pkg from './package.json';
 export default {
     input: 'src/index.ts', // 打包入口a
     output: [
-        {file: pkg.main, format: 'cjs'},
-        {file: pkg.module, format: 'es'},
+        // UMD
         {
-            name: "fairyjs",
-            file: pkg.module, format: 'umd',
+            file: `dist/${pkg.name}.min.js`,
+            format: 'umd',
+            name: "fairyJS", // 全局的变量名
+            esModule: false,
+            exports: "named",
+            sourcemap: true,
+        },
+        // ESM AND CJS
+        {
+            dir: "dist/esm",
+            format: 'esm',
+            exports: "named",
+            sourcemap: true,
+        },
+        // ESM AND CJS
+        {
+            dir: "dist/cjs",
+            format: 'cjs',
+            exports: "named",
+            sourcemap: true,
         },
     ],
     // output: { // 打包出口
